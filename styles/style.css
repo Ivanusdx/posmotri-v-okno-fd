@@ -290,6 +290,10 @@ ol {
   line-height: 16px;
   font-weight: 400;
   font-family: "Fira Sans Condensed", sans-serif;
+   display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
 
 .content__video-card-thumbnail {

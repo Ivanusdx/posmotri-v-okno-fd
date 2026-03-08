@@ -230,10 +230,6 @@ ol {
   overflow-x: hidden;
 }
 
-.preloader {
-  position: absolute;
-}
-
 .content__list-item {
   padding-left: 3px;
   padding-right: 3px;

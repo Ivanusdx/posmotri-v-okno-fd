@@ -106,6 +106,7 @@ ol {
   align-items: center;
   width: fit-content;
   gap: 5px;
+  cursor: pointer;
 }
 
 .visually-hidden {
@@ -181,24 +182,24 @@ ol {
   font-weight: 700;
 }
 
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
+
 .search-form__submit-button {
   width: 194px;
   height: 34px;
   align-self: flex-end;
   cursor: pointer;
-}
-
-.search-form__submit-button:hover {
-  text-decoration: underline;
-}
-
-.search-form__submit-button:active {
-  background-color: #545050;
-}
-
-.search-form__submit-button:focus-visible {
-  outline: 1px solid #fff;
-  outline-offset: 2px;
 }
 
 .content__details {
@@ -227,7 +228,6 @@ ol {
   position: relative;
   height: 300px;
   overflow-y: auto;
-  overflow-x: hidden;
 }
 
 .content__list-item {
@@ -247,6 +247,10 @@ ol {
   color: #fff;
   display: block;
   cursor: pointer;
+}
+
+.content__card-link_current {
+  background-color: #545050;
 }
 
 .content__card-link:active {
@@ -287,7 +291,7 @@ ol {
   font-weight: 400;
   font-family: "Fira Sans Condensed", sans-serif;
    display: -webkit-box;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
@@ -307,9 +311,4 @@ ol {
   width: 100%;
   min-height: 35px;
   cursor: pointer;
-}
-
-.more-button:focus-visible {
-  outline: 1px solid #fff;
-  outline-offset: 2px;
 }
